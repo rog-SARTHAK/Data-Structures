@@ -1,0 +1,36 @@
+Dynamic programming is an algorithmic paradigm for solving a given complex problem
+by breaking it down into subproblems and memorizing the outcomes of those subproblems 
+to prevent repeating computations.
+
+In divide-and-conquer the sub-problems do not repeat themselves whereas this is not
+the same with dynamic programming.
+
+
+Example
+________
+
+Fib(5) -> Fib(4) + Fib(3)
+
+Fib(4) -> Fib(3) + Fib(2)
+
+Fib(3) -> Fib(2) + Fib(1)
+
+
+Fib(3) is calculated twice, once for branch of Fib(5)=Fib(4)+Fib(3)
+and again for Fib(4)=Fib(3)+Fib(2)
+
+This recurring problem is called Overlapping Subproblem as it solves
+the same subproblem again and again.
+
+Handling Overlapping Subproblems
+________________________________
+
+Memorization 
+-> Top-Down, 
+-> Lookup table is maintained and checked before computation of any state
+-> Recursion is involved
+
+Tabulation 
+-> Bottom-Up
+-> Solution is built from the base or bottom most state
+-> Iterative process
